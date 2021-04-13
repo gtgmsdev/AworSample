@@ -1,0 +1,3 @@
+include ':awor'
+include ':app'
+rootProject.name = "Awor Sample"

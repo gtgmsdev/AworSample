@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_white_7_stroke_gray"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="Gabung Pertemuan"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_room_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="####-####-####" />
+
+        <!--<com.gamatechno.awor.utils.maskedEditText.MaskedEditText
+            android:id="@+id/et_room_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+            android:hint="############"
+            android:typeface="monospace"
+            mask:keep_hint="true"
+            mask:mask="####-####-####" />-->
+
+        <EditText
+            android:id="@+id/et_link_meet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://link.awor.com/meet/iwz9-dlna-38kd"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_change_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gunakan URL" />
+
+        <Button
+            android:id="@+id/btn_join_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_primary"
+            android:text="Gabung"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
